@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.intel.issiot.cdt.config.gnu.cross.exe.debug.1818848241.190706561">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.intel.issiot.cdt.config.gnu.cross.exe.debug.1818848241.190706561" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="com.intel.issiot.cdt.config.gnu.cross.exe.debug.1818848241.190706561" name="Debug" parent="com.intel.issiot.cdt.config.gnu.cross.exe.debug">
+					<folderInfo id="com.intel.issiot.cdt.config.gnu.cross.exe.debug.1818848241.190706561." name="/" resourcePath="">
+						<toolChain id="com.intel.issiot.cdt.toolchain.gnu.cross.exe.debug.526811231" name="IoT Cross GCC" superClass="com.intel.issiot.cdt.toolchain.gnu.cross.exe.debug">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.1135068570" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/MQTTProject}/Debug" id="com.intel.issiot.builder.93714755" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="IoT internal builder" superClass="com.intel.issiot.builder">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Release"/>
+								</outputEntries>
+							</builder>
+							<tool id="com.intel.issiot.cdt.tool.gnu.cross.c.compiler.474021474" name="IoT Cross GCC Compiler" superClass="com.intel.issiot.cdt.tool.gnu.cross.c.compiler">
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1240697743" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1217348862" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="com.intel.issiot.cdt.gnu.c.option.include.paths.1883019730" superClass="com.intel.issiot.cdt.gnu.c.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/home/gochaudhari/Downloads/iss-iot-linux/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa"/>
+									<listOptionValue builtIn="false" value="/home/gochaudhari/Downloads/iss-iot-linux/devkit-x86/sysroots/i586-poky-linux/usr/include/upm"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.581156839" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.intel.issiot.cdt.tool.gnu.cross.cpp.compiler.946939902" name="IoT Cross G++ Compiler" superClass="com.intel.issiot.cdt.tool.gnu.cross.cpp.compiler">
+								<option id="gnu.cpp.compiler.option.optimization.level.944994834" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.854949946" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="com.intel.issiot.cdt.gnu.cpp.option.include.paths.2009623407" superClass="com.intel.issiot.cdt.gnu.cpp.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/home/gochaudhari/Downloads/iss-iot-linux/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa"/>
+									<listOptionValue builtIn="false" value="/home/gochaudhari/Downloads/iss-iot-linux/devkit-x86/sysroots/i586-poky-linux/usr/include/upm"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1544826513" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="com.intel.issiot.cdt.tool.gnu.cross.c.linker.830728196" name="IoT Cross GCC Linker" superClass="com.intel.issiot.cdt.tool.gnu.cross.c.linker">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1742246062" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.intel.issiot.cdt.tool.gnu.cross.cpp.linker.633276346" name="IoT Cross G++ Linker" superClass="com.intel.issiot.cdt.tool.gnu.cross.cpp.linker">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.821396618" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.intel.issiot.cdt.gnu.generic.tool.archiver.1588968117" name="IoT Cross GCC Archiver" superClass="com.intel.issiot.cdt.gnu.generic.tool.archiver"/>
+							<tool id="com.intel.issiot.cdt.gnu.generic.tool.assembler.945877012" name="IoT Cross GCC Assembler" superClass="com.intel.issiot.cdt.gnu.generic.tool.assembler">
+								<option id="gnu.both.asm.option.include.paths.385407085" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/home/gochaudhari/Downloads/iss-iot-linux/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa"/>
+									<listOptionValue builtIn="false" value="/home/gochaudhari/Downloads/iss-iot-linux/devkit-x86/sysroots/i586-poky-linux/usr/include/upm"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.874782284" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.intel.issiot.cdt.config.cross.exe.release.1755528804.1219749016">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.intel.issiot.cdt.config.cross.exe.release.1755528804.1219749016" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="com.intel.issiot.cdt.config.cross.exe.release.1755528804.1219749016" name="Release" parent="com.intel.issiot.cdt.config.cross.exe.release">
+					<folderInfo id="com.intel.issiot.cdt.config.cross.exe.release.1755528804.1219749016." name="/" resourcePath="">
+						<toolChain id="com.intel.issiot.cdt.toolchain.gnu.cross.exe.release.248755757" name="IoT Cross GCC" superClass="com.intel.issiot.cdt.toolchain.gnu.cross.exe.release">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.1107308488" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/MQTTProject}/Release" id="com.intel.issiot.builder.1661507629" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="IoT internal builder" superClass="com.intel.issiot.builder"/>
+							<tool id="com.intel.issiot.cdt.tool.gnu.cross.c.compiler.1313818620" name="IoT Cross GCC Compiler" superClass="com.intel.issiot.cdt.tool.gnu.cross.c.compiler">
+								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.1933300407" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1895301944" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.753826449" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.intel.issiot.cdt.tool.gnu.cross.cpp.compiler.2041078157" name="IoT Cross G++ Compiler" superClass="com.intel.issiot.cdt.tool.gnu.cross.cpp.compiler">
+								<option id="gnu.cpp.compiler.option.optimization.level.386884380" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1192432721" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.2056445621" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="com.intel.issiot.cdt.tool.gnu.cross.c.linker.1405589147" name="IoT Cross GCC Linker" superClass="com.intel.issiot.cdt.tool.gnu.cross.c.linker">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1142107602" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.intel.issiot.cdt.tool.gnu.cross.cpp.linker.2062842923" name="IoT Cross G++ Linker" superClass="com.intel.issiot.cdt.tool.gnu.cross.cpp.linker">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.730315852" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.intel.issiot.cdt.gnu.generic.tool.archiver.597451621" name="IoT Cross GCC Archiver" superClass="com.intel.issiot.cdt.gnu.generic.tool.archiver"/>
+							<tool id="com.intel.issiot.cdt.gnu.generic.tool.assembler.2070238123" name="IoT Cross GCC Assembler" superClass="com.intel.issiot.cdt.gnu.generic.tool.assembler">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.604212252" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="MQTTProject.com.intel.issiot.target.gnu.cross.exe.19703343" name="Executable" projectType="com.intel.issiot.target.gnu.cross.exe"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.intel.issiot.cdt.config.gnu.cross.exe.debug.1818848241.190706561;com.intel.issiot.cdt.config.gnu.cross.exe.debug.1818848241.190706561.;com.intel.issiot.cdt.tool.gnu.cross.cpp.compiler.946939902;cdt.managedbuild.tool.gnu.cpp.compiler.input.1544826513">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.intel.issiot.cdt.config.cross.exe.release.1755528804;com.intel.issiot.cdt.config.cross.exe.release.1755528804.;com.intel.issiot.cdt.tool.gnu.cross.c.compiler.1428500831;cdt.managedbuild.tool.gnu.c.compiler.input.845455859">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.intel.issiot.cdt.config.gnu.cross.exe.debug.1818848241.190706561;com.intel.issiot.cdt.config.gnu.cross.exe.debug.1818848241.190706561.;com.intel.issiot.cdt.tool.gnu.cross.c.compiler.474021474;cdt.managedbuild.tool.gnu.c.compiler.input.581156839">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.intel.issiot.cdt.config.gnu.cross.exe.debug.1818848241;com.intel.issiot.cdt.config.gnu.cross.exe.debug.1818848241.;com.intel.issiot.cdt.tool.gnu.cross.c.compiler.1637999784;cdt.managedbuild.tool.gnu.c.compiler.input.797295719">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
