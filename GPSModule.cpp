@@ -16,7 +16,7 @@ using namespace mraa;
 // Since UART 0 of Intel Edison is connected to the Arduino
 GPSData::GPSData() : uartHandle(0)
 {
-
+	gpsData = 0;
 }
 
 void GPSData::InitializaGPSCommunication()
@@ -24,8 +24,13 @@ void GPSData::InitializaGPSCommunication()
 	uartHandle.setBaudRate(9600);
 }
 
-string GPSData::ReadDataFromGPS()
+float GPSData::ReadDataFromGPS()
 {
-	gpsData = "GPS Data";
+	gpsData = 12.31;
 	return gpsData;
+}
+
+int GPSData::GetCurrentSpeed()
+{
+	return 0;
 }

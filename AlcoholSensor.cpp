@@ -27,15 +27,3 @@ int AlcoholSensor::ReadData()
 {
 	return aioValue.read();
 }
-
-void AlcoholSensor::PublishAlcoholSensordata()
-{
-	const char* topic = "sensor/alcohol";
-	/*sensor/accelerometer
-	sensor/GPSLocation
-	sensor/isSpeeding
-	sensor/*/
-	int alcoholData = aioValue.read();
-
-	string alcoholDataMessage;
-}

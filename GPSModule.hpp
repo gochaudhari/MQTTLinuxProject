@@ -19,11 +19,12 @@ class GPSData
 	public:
 		GPSData();
 		void InitializaGPSCommunication();
-		string ReadDataFromGPS();
+		float ReadDataFromGPS();
+		int GetCurrentSpeed();
 
 	private:
 		Uart uartHandle;
-		string gpsData;
+		float gpsData;
 };
 
 

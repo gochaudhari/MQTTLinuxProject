@@ -44,6 +44,6 @@ float* GetAccelerometerData()
 	returnValue[1] = ay;
 	returnValue[2] = az;
 
-	return returnValue;
 	delete accel;
+	return returnValue;
 }
