@@ -10,7 +10,11 @@
 #include "MQTTProject.hpp"
 #include "MQTTClient.hpp"
 #include "string"
+#include "upm/mma7660.hpp"
+#include "iostream"
 
+using namespace std;
+using namespace upm;
 using namespace mraa;
 
 
@@ -34,6 +38,4 @@ void AlcoholSensor::PublishAlcoholSensordata()
 	int alcoholData = aioValue.read();
 
 	string alcoholDataMessage;
-
-
 }

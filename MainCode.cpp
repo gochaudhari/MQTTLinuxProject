@@ -12,7 +12,6 @@
 #include "iostream"
 #include "stdlib.h"
 #include "GPSModule.hpp"
-#include "upm/mma7660.hpp"
 
 using namespace std;
 
@@ -45,6 +44,16 @@ int main(int argc, char* argv[])
 
 	while(1)
 	{
+		// Get the present GPS Data
+
+		// Get the Accelerometer Data in Main Algorithm
+		// Get Speed from the GPS Data in Main Algorithm
+		///Todo: To Write an algorithm which gets the speed and acceleration data and decides whether
+		/// it is rash driving.
+
+		// Get Alcohol Data in the Main Algorithm
+
+		//
 		cout << gpsDataVar.ReadDataFromGPS();
 		cout << alcoholSensorVar.ReadData() << endl;
 		alcoholSensorVar.PublishAlcoholSensordata();
