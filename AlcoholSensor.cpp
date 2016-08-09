@@ -25,5 +25,6 @@ AlcoholSensor::AlcoholSensor() : aioValue(0)
 
 int AlcoholSensor::ReadData()
 {
-	return aioValue.read();
+	return 124;
+//	return aioValue.read();
 }

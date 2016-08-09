@@ -16,9 +16,9 @@
 #include "MainAlgorithm.hpp"
 
 #define GPSModule
+#define SpeedModule
 #define AccelerometerModule
 #define AlcoholModule
-#define MainAlgorithm
 #define MainAlgorithmModule
 
 using namespace std;
@@ -49,11 +49,9 @@ int main(int argc, char* argv[])
 	AlcoholSensor alcoholSensorVar;
 #endif
 
-#ifdef GPSModule
 	// This is the while loop of embedded controller
 	GPSData gpsDataVar;
 	gpsDataVar.InitializaGPSCommunication();
-#endif
 
 #ifdef MainAlgorithmModule
 	MainAlgorithmProcess mainAlgorithmVar;
@@ -62,6 +60,8 @@ int main(int argc, char* argv[])
 
 	while(1)
 	{
+		PublishToTopic(mqttMessagePack, topic, MQTT::QOS0);
+
 		// Get the present GPS Data
 		/// Todo:: In every message, lat long would be published.
 		mqttMessagePack.lattitude = gpsDataVar.ReadDataFromGPS();
@@ -76,20 +76,26 @@ int main(int argc, char* argv[])
 		mqttMessagePack.message = "acceleration";
 		PublishToTopic(mqttMessagePack, "sensor/accelerometer", MQTT::QOS0);
 #endif
+
+#ifdef SpeedModule
 		// Get Speed from the GPS Data in Main Algorithm
 		/// Todo: sensor/speed
 		int speedData = gpsDataVar.GetCurrentSpeed();
 		mqttMessagePack.messageTitle = "Speed Data";
 		mqttMessagePack.message = "speed";
 		PublishToTopic(mqttMessagePack, "sensor/speed", MQTT::QOS0);
+#endif
 
+#ifdef AlcoholModule
 		// Get Alcohol Data in the Main Algorithm ( with location)
 		/// Todo: sensor/alcoholData
 		int alcoholData = alcoholSensorVar.ReadData();
 		mqttMessagePack.messageTitle = "Alcohol Data";
 		mqttMessagePack.message = "alcohol";
 		PublishToTopic(mqttMessagePack, "sensor/alcoholData", MQTT::QOS0);
+#endif
 
+#ifdef MainAlgorithmModule
 		// To detect whether the driving is rash or not
 		/// Todo: flags/IsRash
 		mqttMessagePack.messageTitle = "Is Rash Flag";
@@ -100,11 +106,15 @@ int main(int argc, char* argv[])
 			mqttMessagePack.message = "FALSE";
 		}
 		PublishToTopic(mqttMessagePack, "flags/isRash", MQTT::QOS0);
+#endif
+
+#ifdef MainAlgorithmModule
 		// To Write an algorithm which gets the speed and acceleration data and decides whether it is rash driving.
 		/// Todo: vehicle/drivingScore
 		mqttMessagePack.messageTitle = "Driving Score";
 		mqttMessagePack.message = "56";
 		PublishToTopic(mqttMessagePack, "vehicle/drivingScore", MQTT::QOS0);
+#endif
 
 		//Send emergency button to topic
 		/// Todo: emergency/emergencyButton
